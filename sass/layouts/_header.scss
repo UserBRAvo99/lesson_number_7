@@ -15,11 +15,13 @@
     &_list {
             display: flex;
         }
-    &_item {
-            position: relative;
-            margin-right: 50px;
-        }
+                &_item {
+                    position: relative;
+                    margin-right: 50px;
+                }
+    
 }
+
 
 
 
@@ -33,18 +35,18 @@
 
 
 
-&_list &_item:last-child {
+.header_list .header_item:last-child {
     margin-right: 0;
 }
 
-&__nav {
+.header_nav {
     display: flex;
     align-items: center;
 }
 
 /* Блок навігації */
 /* Лого */
-&_logo {
+.header_logo {
     font-family: 'Raleway',
         sans-serif;
     font-weight: 700;
@@ -63,7 +65,7 @@
 
 
 /* Список навігації */
-&_link {
+.header_link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -81,7 +83,7 @@
 
 
 /* Контакти в шапці */
-&_contacts {
+.header_contacts {
     display: flex;
     margin-left: auto;
     &_link {
