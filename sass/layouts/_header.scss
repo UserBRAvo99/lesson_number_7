@@ -12,10 +12,10 @@
 
     border-bottom: 1px solid var(--border-bottom-color-header);
     width: 100%;
-    &__list {
+    &_list {
             display: flex;
         }
-    &__item {
+    &_item {
             position: relative;
             margin-right: 50px;
         }
