@@ -2,38 +2,35 @@
 /* Поєднані стилі для двух заголовків блоків case & team  */
 .case {
     padding-top: 0;
-    &_list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        &_item {
+}
+.case__list {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
             margin-right: 30px;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
         }
-                &_title {
-                    margin-bottom: 50px;
-                }
 }
-.case_list .case_item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.case_title,
-.team_first_title {
+.case__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     color: var(--primary-text-black);
+
+    margin-bottom: 50px;
 }
 
 
 
-.case_bloc_img {
+.case__list__item__wrapper {
     display: block;
     position: relative;
 }
 
-.case_bloc_title {
+.case__position__bloc {
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -42,19 +39,19 @@
     min-height: 70px;
 
     background: var(--background-case_bloc_title);
+    &__title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            font-weight: 700;
+            line-height: 1.14;
+            text-transform: uppercase;
+    
+            color: var(--primary-text-white);
+    
+            white-space: nowrap;
+        }
 }
 
-.case_title_img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-
-    color: var(--primary-text-white);
-
-    white-space: nowrap;
-}

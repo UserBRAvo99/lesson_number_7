@@ -186,7 +186,7 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__link__link:hover, .header__link__link:focus {
+.header__link:hover, .header__link:focus {
   color: var(--accent-color);
 }
 
@@ -266,8 +266,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img_team_header.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_team_header.jpg");
 }
-
-.hero_title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -280,8 +279,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-.hero_button {
+.hero__button {
   min-width: 215px;
   border-radius: 4px;
   border: transparent;
@@ -309,30 +307,30 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero_button_button:hover, .hero_button_button:focus {
+.hero__button:hover, .hero__button:focus {
   background: var(--background-button-hover);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.features_list {
+.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.features_list_item {
+.features__list__item {
   display: block;
   width: 270px;
   margin-right: 30px;
 }
-.features_list_item_item:nth-child(4n) {
+.features__list__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.features_icon_bloc {
+.features__icon__svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,7 +345,7 @@ body {
   margin-bottom: 30px;
 }
 
-.features_title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -357,7 +355,7 @@ body {
   margin-bottom: 10px;
 }
 
-.features_description {
+.features__description {
   line-height: 1.71;
 }
 
@@ -366,39 +364,36 @@ body {
 .case {
   padding-top: 0;
 }
-.case_list {
+
+.case__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.case_item {
+.case__list__item {
   margin-right: 30px;
 }
-.case_title {
-  margin-bottom: 50px;
-}
-
-.case_list .case_item:nth-child(3n) {
+.case__list__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.case_title,
-.team_first_title {
+.case__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--primary-text-black);
+  margin-bottom: 50px;
 }
 
-.case_bloc_img {
+.case__list__item__wrapper {
   display: block;
   position: relative;
 }
 
-.case_bloc_title {
+.case__position__bloc {
   position: absolute;
   bottom: 3px;
   left: 0;
@@ -406,8 +401,7 @@ body {
   min-height: 70px;
   background: var(--background-case_bloc_title);
 }
-
-.case_title_img {
+.case__position__bloc__title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -427,6 +421,14 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.team_first_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-black);
 }
 
 .team_first_title {
@@ -748,13 +750,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.filter_list_item {
+.filter_list .filter_item {
   margin-right: 8px;
 }
-.filter_list_item:last-child {
+.filter_list:last-child {
   margin-right: 0;
 }
-.filter_list .filter_button {
+
+.filter_button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -770,7 +773,7 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter_list .filter_button:hover, .filter_list .filter_button:focus, .filter_list .filter_button:active {
+.filter_button:hover, .filter_button:focus, .filter_button:active {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--primary-text-white);

@@ -3,7 +3,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.team_first_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--primary-text-black);
+}
 .team_first_title {
     margin-bottom: 50px;
 }

@@ -1,17 +1,17 @@
-.features_list {
+.features__list {
     display: flex;
     flex-wrap: wrap;
-    &_item {
+    &__item {
             display: block;
             width: 270px;
             margin-right: 30px;
-                &_item:nth-child(4n) {
+                &:nth-child(4n) {
                     margin-right: 0;
                 }
         }
 }
 
-.features_icon_bloc {
+.features__icon__svg {
     display: flex;
     height: 120px;
     background: var(--features-title-background-before);
@@ -22,7 +22,7 @@
     margin-bottom: 30px;
 }
 
-.features_title {
+.features__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -33,6 +33,6 @@
     margin-bottom: 10px;
 }
 
-.features_description {
+.features__description {
     line-height: 1.71;
 }
