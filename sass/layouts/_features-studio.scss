@@ -11,7 +11,7 @@
         }
 }
 
-&_icon_bloc {
+.features_icon_bloc {
     display: flex;
     height: 120px;
     background: var(--features-title-background-before);
@@ -22,7 +22,7 @@
     margin-bottom: 30px;
 }
 
-&_title {
+.features_title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -33,6 +33,6 @@
     margin-bottom: 10px;
 }
 
-&_description {
+.features_description {
     line-height: 1.71;
 }

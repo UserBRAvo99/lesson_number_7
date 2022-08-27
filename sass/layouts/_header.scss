@@ -12,16 +12,15 @@
 
     border-bottom: 1px solid var(--border-bottom-color-header);
     width: 100%;
-    &_list {
-            display: flex;
-        }
-                &_item {
-                    position: relative;
-                    margin-right: 50px;
-                }
-    
 }
+.header_list {
+    display: flex;
 
+}
+.header_item {
+    position: relative;
+    margin-right: 50px;
+}
 
 
 
@@ -58,7 +57,7 @@
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-    &_firstp {
+    .header_logo_firstp {
             color: var(--accent-color);
         }
 }

@@ -13,11 +13,11 @@
                     margin-bottom: 50px;
                 }
 }
-&_list .case_item:nth-child(3n) {
+.case_list .case_item:nth-child(3n) {
     margin-right: 0;
 }
 
-&_title,
+.case_title,
 .team_first_title {
     font-weight: 700;
     font-size: 36px;
@@ -28,12 +28,12 @@
 
 
 
-&_bloc_img {
+.case_bloc_img {
     display: block;
     position: relative;
 }
 
-&_bloc_title {
+.case_bloc_title {
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -44,7 +44,7 @@
     background: var(--background-case_bloc_title);
 }
 
-&_title_img {
+.case_title_img {
     position: absolute;
     top: 50%;
     left: 50%;
